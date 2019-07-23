@@ -17,7 +17,7 @@ f = open("testFile" + input1 + ".txt","w+")
 
 # Write some lines of data to the file
 for i in range(10):
-    f.write("Beepboopbeep G is awesome \n")
+    f.write("This is a test \n")
 
 
 # Close the file
