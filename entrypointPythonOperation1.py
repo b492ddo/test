@@ -9,6 +9,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     # Setup the port and get it ready for listening for connections
     s.bind((HOST,PORT))
     s.listen()
+    print('Yaaas queen it worked')
     print('Waiting for incoming connections...')
     conn, addr = s.accept() # Wait for incoming connections # Causes nothing to be printed to logs
     print('Connected to: ', addr)
