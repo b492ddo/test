@@ -18,7 +18,7 @@ f = open("testFile" + input1 + ".txt", "w+")
 
 # Write some lines of data to the file
 for i in range(10):
-    f.write("This is a copied line \n")
+    f.write("Neil is awesome \n")
 
 
 # Close the file
