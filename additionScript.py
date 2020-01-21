@@ -1,4 +1,4 @@
 def run(data, parameters):
     print('parameters for this script are: ', parameters)
-    returnData = int(data[1]) + 10
+    returnData = int(data[2]) + 10
     return returnData
