@@ -1,4 +1,4 @@
-def run(parameters):
+def run(data, parameters):
     print('parameters for this script are: ', parameters)
     returnData = parameters * 2
     return returnData
