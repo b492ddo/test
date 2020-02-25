@@ -1,4 +1,5 @@
 def run(data, parameters):
     print('parameters for this script are: ', parameters)
-    returnData = int(data[2]) * 2
-    return str(returnData)
+    dictData = literal_eval(data)
+    dictData['data'] = str(int(dictData['data']) * 2)
+    return dictData
