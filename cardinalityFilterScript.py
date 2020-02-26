@@ -20,19 +20,16 @@ def run(data, parameters):
                 print('not removing')
                 continue
         else:
-            print('not removing')
+            listDictionaries.remove(element)
+            print('removing')
             continue
-
 
     print('number of elements is: ' + str(len(listDictionaries)))
     for element in listDictionaries:
         cardinality = getCardinality(element)
         print('cardinality left is: ' + str(cardinality))
         # Add a cardinality key to the data
-        if cardinality is not None:
-            element['cardinality'] = str(cardinality)
-        else:
-            element['cardinality'] = ""
+        element['cardinality'] = str(cardinality)
     return json.dumps(listDictionaries)
 
 def getCardinality(element):
