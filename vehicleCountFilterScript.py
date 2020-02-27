@@ -3,7 +3,7 @@ import json
 def run(data, parameters):
     listDictionaries = json.loads(data)
     minVehicleCount = int(parameters['minVehicleCount'])
-    maxVehicleCount = int(parameters['maxVehcileCount'])
+    maxVehicleCount = int(parameters['maxVehicleCount'])
     print('minVehicleCount is: ' + str(minVehicleCount))
     print('maxVehicleCount is: ' + str(maxVehicleCount))
 
