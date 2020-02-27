@@ -34,7 +34,7 @@ def run(data, parameters):
 
 def getVehicleCount(element):
     try:
-        vehicleCount = int(element['properties']['count'])
+        vehicleCount = int(element['properties']['count']['java.lang.Long'])
     except KeyError:
         vehicleCount = None
 
