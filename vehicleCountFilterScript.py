@@ -29,7 +29,7 @@ def run(data, parameters):
         vehicleCount = getVehicleCount(element)
         print('vehicleCount left is: ' + str(vehicleCount))
         # Add a vehicleCount key to the data
-        element['vehicleCount'] = str(vehicleCount)
+        element['vehicle count'] = str(vehicleCount)
     return json.dumps(listDictionaries)
 
 def getVehicleCount(element):
