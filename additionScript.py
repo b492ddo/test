@@ -1,4 +1,7 @@
+import json
+
 def run(data, parameters):
     print('parameters for this script are: ', parameters)
-    returnData = int(data[2]) + 10
-    return str(returnData)
+    dictData = json.loads(data)
+    dictData['data'] = str(int(dictData['data']) + 10)
+    return json.dumps(dictData)
